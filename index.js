@@ -10,9 +10,9 @@ app.use(router)
 app.use(express.json());
 // app.use(bodyParser())
 
-mongoose.connect("mongodb://localhost/todoapp",()=>{
+mongoose.connect("mongodb+srv://kushal:Kushal24@cluster0.q2aawhd.mongodb.net/test",()=>{
     console.log("Database Connected")
-},e=>console.log(e))
+})
 
 
 app.listen(8080,()=>{
